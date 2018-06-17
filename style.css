@@ -1,0 +1,64 @@
+*
+{
+	margin: 0;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #607D8B;
+	font-family: monospace, sans-serif;
+}
+
+header span
+{
+	display: block;
+	flex-grow: 6;
+	color: white;
+	align-self: center;
+	margin-left: 1em;
+	font-size: 1.4em;
+}
+
+header .navigation
+{
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+header .navigation li
+{
+	display: block;
+	flex-grow: 1;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+header .navigation li:last-of-type
+{
+	letter-spacing: 0px; 
+}
+
+header .navigation li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+header .navigation li:hover
+{
+	background-color: #455A64;
+}
+
+content div
+{
+	text-align: center;
+	margin: 10px;
+	color: #212121;
+	font-family: sans-serif;
+}
