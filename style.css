@@ -33,8 +33,6 @@ header .navigation li
 	display: block;
 	flex-grow: 1;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	font-size: 1.1em;
 	letter-spacing: 1px;
 }
@@ -47,7 +45,9 @@ header .navigation li:last-of-type
 header .navigation li a
 {
 	text-decoration: none;
+	display: block;
 	color: white;
+	padding: 10px 0 10px 0;
 }
 
 header .navigation li:hover
