@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Joey Kanaly</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<header>
-			<span>Joey Kanaly</span>
-			<div class="navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</div>
-		</header>
-		<content>
-			<div>
-				<h1>Project Previews</h1>
-			</div>
-		</content>
-	</body>
+    <head>
+        <title>Joey Kanaly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#expand-nav").click(function(){
+                   $(this).toggleClass("fa-bars").toggleClass("fa-times");
+                   $("#nav-items").toggleClass("hidden");
+                });
+            });
+        </script>
+    </head>
+    <header>
+        <div id="main-items">
+            <span>Joey Kanaly</span>
+            <i id="expand-nav" class="fas fa-bars"></i>
+        </div>
+        <nav id="nav-items" class="hidden">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+    </header>
 </html>
